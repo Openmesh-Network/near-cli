@@ -17,7 +17,6 @@ rustPlatform.buildRustPackage rec {
   };
   cargoLock = {
     lockFile = "${src}/Cargo.lock";
-    allowBuiltinFetchGit = true;
   };
 
   NEAR_RELEASE_BUILD = "release";
