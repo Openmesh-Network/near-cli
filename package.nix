@@ -7,13 +7,13 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "near-cli-rs";
-  version = "0.28.0";
+  version = "0.29.0";
 
   src = fetchFromGitHub {
     owner = "near";
     repo = "near-cli-rs";
     tag = "v${version}";
-    hash = "sha256-rMoOpx/KQ1jxS8TzoHBDq5oRZe5N8ffe006vmzTrSrY=";
+    hash = "sha256-qs7Cldaekue2k3ce4MtF0ax4R3RGKAkwwvQhIiSpu24=";
   };
   cargoLock = {
     lockFile = "${src}/Cargo.lock";
